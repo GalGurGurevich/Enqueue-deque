@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENQUEUE Project</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<h4 class="headliners">Enqueue</h4>
+<form>
+    <input id="nameInput" type="text">
+    <input id="submitName" type="button" value="Enqueue" onclick="AddPersonToQueue(name)">
+</form>
+<h4 class="headliners">Queue</h4>
+<body>
+    <table id="pendingTable">
+        <tr>
+          <th>Name</th>
+          <th>Queue Num</th>
+          <th class="th-TIME">Arrived At</th>
+        </tr>
+      </table>
+<h4 class="headliners">Current</h4>
+<table id="proccesingTable">
+    <tr>
+      <th>Name</th>
+      <th>Queue Num</th>
+      <th class="th-TIME">Arrived At</th>
+    </tr>
+  </table>
+  <br>
+  <button onclick="CallNextPerson()">Call Next</button>
+  
+  <script src='script.js'></script>
+</body>
+</html>

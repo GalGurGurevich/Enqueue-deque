@@ -1,0 +1,57 @@
+h4 {
+    color: chartreuse;
+    text-shadow: 1px 0.5px green;
+    font-size: x-large;
+}
+
+button,
+input {
+    color: chartreuse;
+    background-color: transparent;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+button:hover,
+input:hover {
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid green;
+    padding: 10px;
+    max-width: 500px;
+    color: chartreuse;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+#nameInput {
+    cursor: text;
+}
+
+@media screen and (min-width: 1200px) {
+    table {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    .th-TIME {
+        display: none;
+    }
+    td:nth-child(3) {
+        display: none;
+    }
+}
